@@ -1,0 +1,39 @@
+.tokensEarned {
+    background-color: rgba(49, 43, 43, 0.5);
+    border-radius: 20px;
+    padding: 15px;
+    color: #fff;
+    flex: 1;
+    border: 1px solid rgba(255, 255, 255, 1);
+    width: 391px;
+    height: 80px;
+  }
+  
+  .tokenInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tokenLabel {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .tokenValue {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .usdValue {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 991px) {
+    .tokensEarned {
+      margin-bottom: 20px;
+    }
+  }

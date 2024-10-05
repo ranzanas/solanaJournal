@@ -1,0 +1,66 @@
+.journalGroup {
+    background-color: rgba(29, 30, 29, 0.6);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: #fff;
+  }
+  
+  .groupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .groupName {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .joinButton {
+    border-radius: 15px;
+    background-color: rgba(121, 216, 0, 1);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 16px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+  }
+  
+  .groupDetails {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(65, 65, 65, 1);
+    border-radius: 0 0 20px 20px;
+    padding: 13px;
+  }
+  
+  .detailItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detailLabel {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .detailValue {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 11px;
+  }
+  
+  @media (max-width: 991px) {
+    .groupDetails {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .detailItem {
+      width: 45%;
+    }
+  }
