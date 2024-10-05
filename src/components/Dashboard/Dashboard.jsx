@@ -17,9 +17,9 @@ const Dashboard = () => {
       timestamp: "3:14 pm 03/10/24"
     },
     {
-      title: "",
+      title: "Commit to myself",
       content: "I wanna finish my projects by sunday pakka, no more excuses!",
-      timestamp: ""
+      timestamp: "3:14 pm 03/10/24"
     },
     {
       title: "Just a normal day thought",
@@ -44,7 +44,7 @@ const Dashboard = () => {
           <TokensEarned tokens="427.44" usdValue="23.20" />
           <CurrentStreak days="26" />
         </div>
-        
+
         <section className={styles.journalSection}>
           <JournalControls />
           {journalEntries.map((entry, index) => (
