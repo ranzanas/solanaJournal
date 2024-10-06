@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import HomePage from './HomePage';
 import Dashboard from './components/Dashboard/Dashboard';
+import JournalPage from './components/JournalPage/JournalPage';
 
 const OKTO_CLIENT_API_KEY = "919f1a75-4586-400a-8bc8-d0bbbeda2827";
 
@@ -17,6 +18,7 @@ return (
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path = "/journal" element={<JournalPage />} />
       </Routes>
     </OktoProvider>
   </Router>
