@@ -7,7 +7,7 @@ const JournalControls = ({ showPostButton = true }) => (
       <button className={styles.oldestButton}>Oldest</button>
     </div>
     {showPostButton && (
-      <button className={styles.postJournalButton}>Post Journal</button>
+      <button className={styles.postJournalButton}>New Journal</button>
     )}
   </div>
 );
