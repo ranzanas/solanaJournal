@@ -36,25 +36,19 @@ export default function JournalPage() {
           currentStreaks="26"
         />
       </div>
-      <div className={styles.mainArea}>
-        <div className={styles.entryAside}>
-          <JournalControls showPostButton={false} />
-          {journalEntries.map((entry, index) => (
-            <JournalEntry key={index} {...entry} />
-          ))}
-        </div>
-        <div className={styles.writeArea}>
-          <h2>What's on your mind today?</h2>
-          <input type="text" className={styles.title} placeholder="Title" />
-          <textarea
-            name="body"
-            id="body"
-            className={styles.body}
-            placeholder="How was your day today?.."
-          ></textarea>
-          <button className={styles.saveJournalButton}>Save Journal</button>
-        </div>
+      {/* <div className={styles.mainArea}> */}
+      <div className={styles.writeArea}>
+        <h2>What's on your mind today?</h2>
+        <input type="text" className={styles.title} placeholder="Title" />
+        <textarea
+          name="body"
+          id="body"
+          className={styles.body}
+          placeholder="How was your day today?.."
+        ></textarea>
+        <button className={styles.saveJournalButton}>Save Journal</button>
       </div>
+      {/* </div> */}
       <Footer />
     </div>
   );

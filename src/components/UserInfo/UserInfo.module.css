@@ -7,8 +7,9 @@
   .userStats{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 49%;
     margin-bottom: 20px;
+    margin-left: 10px;
   }
   .statItem {
     background-color: rgba(29, 30, 29, 0.6);

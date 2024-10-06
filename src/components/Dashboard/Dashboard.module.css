@@ -14,9 +14,11 @@
     min-height: 100vh;
   }
 
-  .dashboardBlur{
-    filter: blur(5px);
-    pointer-events: none;
+  .headerStyle{
+    background-color: rgba(49, 43, 43, 0.5);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    margin-top: 15px;
   }
   
   .mainContent {
@@ -42,10 +44,13 @@
     margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 1);
   }
+  .journalSection{
+    margin-left: 15px;
+  }
   .groupsSection{
     position: relative;
-    left: 52%;
-    top: -723px;
+    left: 705px;
+    top: -792px;
     
   }
   .groupsTitle {
