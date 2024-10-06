@@ -1,8 +1,8 @@
-
+import React, { useState } from 'react';
 import Header from '../Header/Header';
-import UserStats from '../UserStats/UserStats';
-import TokensEarned from '../TokensEarned/TokensEarned';
-import CurrentStreak from '../CurrentStreak/CurrentStreak';
+import {UserInfo , UserStats} from '../UserInfo/UserInfo';
+/*import TokensEarned from '../TokensEarned/TokensEarned';
+import CurrentStreak from '../CurrentStreak/CurrentStreak';*/
 import JournalControls from '../JournalControls/JournalControls';
 import JournalEntry from '../JournalEntry/JournalEntry';
 import JournalGroup from '../JournalGroup/JournalGroup';
@@ -10,6 +10,9 @@ import Footer from '../Footer/Footer';
 import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
   const journalEntries = [
     {
       title: "Just a normal day thought",
@@ -36,14 +39,15 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className={styles.dashboard}>
+    <div className={isModalOpen ? `${styles.dashboard} ${styles.dashboardBlur}` : styles.dashboard}>
       <Header userName="Aditya" />
       <main className={styles.mainContent}>
-        <UserStats userId="a51821" totalJournals="35" groupsWon="12" leaderboardRank="#03" />
-        <div className={styles.statsRow}>
+        <UserInfo userId="a51821" totalJournals="35" pointsEarn="427.44" currentStreaks="26" />
+        <UserStats groupsWon="3"  leaderboardRank="#3"/> 
+        {/* <div className={styles.statsRow}>
           <TokensEarned tokens="427.44" usdValue="23.20" />
           <CurrentStreak days="26" />
-        </div>
+        </div> */}
 
         <section className={styles.journalSection}>
           <JournalControls />
@@ -57,9 +61,10 @@ const Dashboard = () => {
             <JournalGroup key={index} {...group} />
           ))}
         </section>
-
       </main>
       <Footer />
+
+
     </div>
   );
 };
