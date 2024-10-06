@@ -39,6 +39,11 @@
     border: 1px solid rgba(0, 0, 0, 1);
     cursor: pointer;
   }
+  .postJournalButton:hover{
+    background-color: rgba(49, 43, 43, 0.5);
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(121, 216, 0, 1);
+  }
   
   @media (max-width: 991px) {
     .journalControls {

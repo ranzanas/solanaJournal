@@ -2,29 +2,8 @@ import styles from "./JournalPage.module.css";
 import Header from "../Header/Header";
 import { UserInfo } from "../UserInfo/UserInfo";
 import Footer from "../Footer/Footer";
-import JournalControls from "../JournalControls/JournalControls";
-import JournalEntry from "../JournalEntry/JournalEntry";
 
 export default function JournalPage() {
-  const journalEntries = [
-    {
-      title: "Just a normal day thought",
-      content:
-        "I was going through my photo album and felt very sad after seeing my old friends photos. They aren't in contact now, hope they're good :)",
-      timestamp: "3:14 pm 03/10/24",
-    },
-    {
-      title: "Commit to myself",
-      content: "I wanna finish my projects by sunday pakka, no more excuses!",
-      timestamp: "3:14 pm 03/10/24",
-    },
-    {
-      title: "Just a normal day thought",
-      content:
-        "I was going through my photo album and felt very sad after seeing my old friends photos. They aren't in contact now, hope they're good :)",
-      timestamp: "3:14 pm 03/10/24",
-    },
-  ];
   return (
     <div className={styles.background}>
       <div className={styles.header}>
